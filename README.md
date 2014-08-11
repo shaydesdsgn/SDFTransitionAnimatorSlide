@@ -65,9 +65,9 @@ SDFTransitionAnimatorSlide
   ```
   #pragma mark - SDTransitionAnimatorSlideDelegate
 
-- (void) transitionAnimatorSlideComplete:(NSString *)identifier
-                      fromViewController:(UIViewController *)fromViewController
-                        toViewController:(UIViewController *)toViewController {
+  - (void) transitionAnimatorSlideComplete:(NSString *)identifier
+                        fromViewController:(UIViewController *)fromViewController
+                          toViewController:(UIViewController *)toViewController {
     
     if ([identifier isEqualToString:@"IdentifierA"]) {
         
