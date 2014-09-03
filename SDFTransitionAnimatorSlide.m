@@ -13,7 +13,7 @@
 {
     self = [super init];
     if (self) {
-        self.direction = kSDTransitionAnimatorSlideLeft;
+        self.direction = kSDFTransitionAnimatorSlideLeft;
         self.transitionDuration = 0.5f;
     }
     return self;

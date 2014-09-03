@@ -7,12 +7,12 @@
 
 #import <Foundation/Foundation.h>
 
-#define kSDTransitionAnimatorSlideUp       CGPointMake(0, 1)
-#define kSDTransitionAnimatorSlideDown     CGPointMake(0, -1)
-#define kSDTransitionAnimatorSlideLeft     CGPointMake(-1, 0)
-#define kSDTransitionAnimatorSlideRight    CGPointMake(1, 0)
+#define kSDFTransitionAnimatorSlideUp       CGPointMake(0, 1)
+#define kSDFTransitionAnimatorSlideDown     CGPointMake(0, -1)
+#define kSDFTransitionAnimatorSlideLeft     CGPointMake(-1, 0)
+#define kSDFTransitionAnimatorSlideRight    CGPointMake(1, 0)
 
-@protocol SDTransitionAnimatorSlideDelegate
+@protocol SDFTransitionAnimatorSlideDelegate
 
 - (void) transitionAnimatorSlideComplete:(NSString *)identifier
                       fromViewController:(UIViewController *)fromViewController
@@ -20,7 +20,7 @@
 
 @end
 
-@interface SDTransitionAnimatorSlide : NSObject <UIViewControllerAnimatedTransitioning>
+@interface SDFTransitionAnimatorSlide : NSObject <UIViewControllerAnimatedTransitioning>
 
 /**
  An id for the animation
@@ -29,7 +29,7 @@
 /**
  Delegate class.
  */
-@property (nonatomic, weak) id <SDTransitionAnimatorSlideDelegate> delegate;
+@property (nonatomic, weak) id <SDFTransitionAnimatorSlideDelegate> delegate;
 /**
  Allows you to set the transitionDuration instead of overriding the method.
  Default: 0.3
